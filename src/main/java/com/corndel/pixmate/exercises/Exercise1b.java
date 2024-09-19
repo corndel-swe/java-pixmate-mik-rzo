@@ -11,7 +11,10 @@ public class Exercise1b {
    * @returns {int} The sum of the array
    */
   public static int sumArray(int[] arr) {
-    // TODO
-    return 0;
+    int sum = 0;
+    for (int x : arr) {
+      sum += x;
+    }
+    return sum;
   }
 }
