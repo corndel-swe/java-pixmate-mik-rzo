@@ -13,7 +13,17 @@ public class Exercise2b {
    *     if no such element is found or if the array is empty.
    */
   public static int stepDown(int[] numbers) {
-    // TODO
+    if (numbers.length == 0) {
+      return -1;
+    }
+    for (int i = 0; i < numbers.length; i++) {
+      if (i == 0) {
+        continue;
+      }
+      if (numbers[i] < numbers[i - 1]) {
+        return i;
+      }
+    }
     return -1;
   }
 }
