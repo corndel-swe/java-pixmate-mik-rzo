@@ -11,7 +11,14 @@ public class Exercise3 {
    * @returns {int} The count of numbers larger than 10
    */
   public static int gridLimit(int[][] grid) {
-    // TODO
-    return 0;
+    int count = 0;
+    for (int[] intArray : grid) {
+      for (int n : intArray) {
+        if (n > 10) {
+          count += 1;
+        }
+      }
+    }
+    return count;
   }
 }
